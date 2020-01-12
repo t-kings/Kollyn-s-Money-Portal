@@ -1,0 +1,5 @@
+										function kbtn<?php echo  $roww["id"] ; ?>() {
+											document.getElementById("kwithdrawal").style.display="block";
+											document.getElementById("kwithdrawal").innerHTML = 
+												"<strong style='color:green;'><?php  echo $roww['toname'] ; ?> </strong> will be withdrawing <strong style='color:green;'> <?php echo  $roww['amount'] ; ?> </strong>sent from <strong style='color:green;'><?php  echo $roww['fromname'] ; ?> </strong> on <strong style='color:green;'> <?php  echo $roww['transdate'] ; ?> </strong> <br /> Re-enter Amount to Proceed <br /> <input type='number' name='konfff' placeholder='Re-enter Amount' required /> <br /> <input type='submit' style='margin-top:10px;' name='ksubmmmit' value='Submit' /> <br /> <button style='margin-top:20px;' onclick='koutt()'>Back </button>";
+										}	
